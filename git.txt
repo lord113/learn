@@ -1,0 +1,37 @@
+git stash => saved file(s) in stash before commit it to the branch for work on it later
+
+ git stash list => number of stashes 
+
+ git stash pop => taking last stash you add it and remove stash from stash list
+
+ git stash save [msg] => saved in stash with msg
+
+ git stash apply => taking last stash you add it without remove stash from stash list
+
+ git stash [pop or apply] [stash id] => taking specific stash 
+
+ git stash drop => delete last stash you add it
+
+ git stash drop [stash id ] => delete specific stash 
+
+ git stash show => show the content of the last stash you add it
+
+ git stash show [stash id] => show the content of the specific stash
+
+ git stash clear => delete all stashes
+
+
+git restore --staged [filename] => restore file(s) from stage area
+
+code [filename] => open file with vs code
+
+git clean -n => show untracked file(s) before remove
+
+git clean -f => remove untracked file(s)
+
+git log => commits list & show you the head's commit
+note : HEAD is pointer that pointed on the last commit you add
+
+git reset --hard [commit's hash that you don't want remove it] => change the pointer
+of HEAD at the commit that you don't want to remove it and delete the commit(s)
+that was above it
